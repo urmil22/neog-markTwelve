@@ -6,6 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is triangle</title>
 </head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        padding: 0.5rem;
+        font-size: x-large;
+    }
+    .angle-input{
+        width: 25%;
+        height: 3vh;
+        
+    }
+    #is-triangle-btn{
+        font-size: larger;
+        cursor: pointer;
+    }
+    nav{
+        background-color: #4F46E5;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+    a{
+        color: white;
+        font-size: x-large;
+        text-decoration: none;
+        padding-right: 1.5rem;
+    }
+    #output{
+        font-size: x-large;
+        padding-top: 1.5rem;
+        color: black;
+        font-size: xx-large;
+    }
+</style>
 <body>
     <nav>
         <a href="index.html">Is Triangle?</a>
@@ -20,7 +59,7 @@
     <input type="number" class="angle-input" />
     <label for="angle3" >Angle 3</label>
     <input type="number" class="angle-input" />
-    <button id="is-triangle-btn">Is triangle?</button>
+    <button id="is-triangle-btn" style="margin-top: 1rem;">Is triangle?</button>
     <div id="output"></div>
     <script src="/index.js"></script>
 </body>

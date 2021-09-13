@@ -8,6 +8,47 @@
     <title>Hypotenuse</title>
 </head>
 
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        padding: 0.5rem;
+        font-size: x-large;
+    }
+    .side-input{
+        width: 25%;
+        height: 3vh;
+        
+    }
+    #hypotenuse-btn{
+        margin-top: 1rem;
+        font-size: larger;
+        cursor: pointer;
+    }
+    nav{
+        background-color: #4F46E5;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+    a{
+        color: white;
+        font-size: x-large;
+        text-decoration: none;
+        padding-right: 1.5rem;
+    }
+    #output{
+        font-size: x-large;
+        padding-top: 1.5rem;
+        color: black;
+        font-size: xx-large;
+    }
+</style>
+
 <body>
     <nav>
         <a href="index.html">Is Triangle?</a>
@@ -17,9 +58,9 @@
     </nav>
 
     <h1>Calculate hypotenuse</h1>
-    <label>a = </label>
+    <label>Enter base  </label>
     <input type="number" class="side-input" />
-    <label>b = </label>
+    <label>Enter height </label>
     <input type="number" class="side-input" />
     <button id="hypotenuse-btn">Calculate Hypotenuse</button>
     <div id="output"></div>
