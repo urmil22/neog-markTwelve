@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,39 +13,54 @@
         flex-direction: column;
         align-items: center;
     }
-    label{
+
+    label {
         padding: 0.5rem;
         font-size: x-large;
     }
-    .angle-input{
+
+    .angle-input {
         width: 25%;
         height: 3vh;
-        
+
     }
-    #is-triangle-btn{
+
+    #is-triangle-btn {
         font-size: larger;
         cursor: pointer;
     }
-    nav{
+
+    nav {
         background-color: #4F46E5;
         display: block;
         width: 100%;
         text-align: center;
         padding: 2rem;
     }
-    a{
+
+    a {
         color: white;
         font-size: x-large;
         text-decoration: none;
         padding-right: 1.5rem;
     }
-    #output{
+
+    #output {
         font-size: x-large;
         padding-top: 1.5rem;
         color: black;
         font-size: xx-large;
     }
+
+    @media only screen and (max-width: 700px) {
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+        }
+    }
 </style>
+
 <body>
     <nav>
         <a href="index.html">Is Triangle?</a>
@@ -53,14 +69,15 @@
         <a href="area.html">Calculate Area</a>
     </nav>
     <h1>Is Triangle?</h1>
-    <label for="angle1" >Angle 1</label>
-    <input type="number" class="angle-input"  />
-    <label for="angle2" >Angle 2</label>
+    <label for="angle1">Angle 1</label>
     <input type="number" class="angle-input" />
-    <label for="angle3" >Angle 3</label>
+    <label for="angle2">Angle 2</label>
+    <input type="number" class="angle-input" />
+    <label for="angle3">Angle 3</label>
     <input type="number" class="angle-input" />
     <button id="is-triangle-btn" style="margin-top: 1rem;">Is triangle?</button>
     <div id="output"></div>
     <script src="/index.js"></script>
 </body>
+
 </html>
